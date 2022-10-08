@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>码了个码 - weightless</title>
+    <link rel="stylesheet" href="./css/game.css">
+    <link href="./layui_js/layui/css/layui.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+    <script type="text/javascript" src="./layui_js/layui/layui.js"></script>
+</head>
+<body style="background-image: url('./image/game.bg.png');
+             background-repeat: no-repeat;background-size: 100% auto">
+
+<center>
+    <div class="logo-container">
+        <div class="logo"><img src="./image/logo.png"></div>
+    </div>
+    <div style="position: relative; width: 100%; height: auto;">
+        <div class="game-container-box">
+            <div class="game-container" id="game-container">
+                <div class="game-container grid-1"></div>
+                <div class="game-container grid-2"></div>
+                <div class="game-container grid-3"></div>
+                <div class="game-container grid-4"></div>
+                <div class="game-container grid-5"></div>
+            </div>
+            <div class="game-selected-container"></div>
+        </div>
+    </div>
+    <div style="position: relative; width: 100%; height: auto; color: white; ">
+        <a href="" target="_blank" style="color: white; text-decoration: underline">weightless</a>
+    </div>
+</center>
+
+</body>
+
+<script>
+    /****
+     * 初始化游戏
+     * @type {GameGrid}
+     */
+    var gameGrid = new GameGrid().init();
+    gameGrid.printItems();
+</script>
+</html>

@@ -1,0 +1,183 @@
+
+/*============================================================
+                            全局基础样式
+==============================================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow: hidden;
+    background-color: #366FE3;
+}
+
+/*============================================================
+                            游戏盒子样式
+==============================================================*/
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.logo-container .logo {
+    width: 648px;
+}
+.logo-container .logo img {
+    margin-top: 40px;
+    height: 30px;
+}
+.game-container-box {
+    position: relative;
+    height: 730px;
+    width: 648px;
+    padding: 50px 0px 0px 20px;
+}
+.game-container {
+    position: relative;
+    height: 576px;
+    width: 576px;
+    pointer-events: auto;
+}
+.grid-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+.grid-2 {
+    position: absolute;
+    left: 36px;
+    top: 36px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+.grid-3 {
+    position: absolute;
+    left: 72px;
+    top: 72px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+.grid-4 {
+    position: absolute;
+    left: 108px;
+    top: 108px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+.grid-5 {
+    position: absolute;
+    left: 144px;
+    top: 144px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+.game-selected-container {
+    position: relative;
+    margin-top: 50px;
+    height: 68px;
+    width: 504px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #104f86;
+    border: 5px dashed #d0defc;
+}
+
+/*============================================================
+                            游戏元素样式
+==============================================================*/
+.game-selected-container .game-item {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    width: 65px;
+    height: 65px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #d7d5d5;
+}
+.game-selected-container .game-item img {
+    height: 35px;
+    margin-top: 15px;
+}
+.grid-game-item {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.grid-game-item:hover {
+    transform: scale(1.2);
+}
+
+.grid-game-item img {
+    height: 40px;
+    margin-top: 15px;
+}
+
+.disable-click {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.grid-4 .disable-click {
+    opacity: 0.6;
+}
+.grid-3 .disable-click {
+    opacity: 0.6;
+}
+.grid-2 .disable-click {
+    opacity: 0.6;
+}
+.grid-1 .disable-click {
+    opacity: 0.6;
+}
+.grid-5 .grid-game-item {
+    box-shadow: 0px 0px 10px black;
+}
+.grid-4 .grid-game-item {
+    box-shadow: 0px 0px 10px black;
+}
+.grid-3 .grid-game-item {
+    box-shadow: 0px 0px 10px black;
+}
+.grid-2 .grid-game-item {
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/*============================================================
+                            游戏元素样式
+==============================================================*/
+.popup {
+    background-color: transparent;/*背景透明*/
+    box-shadow: 0 0 0 rgba(0,0,0,0);/*前景无阴影*/
+}
+.close-popup-btn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+#restart {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#restart:hover {
+    transform: scale(1.2);
+}
